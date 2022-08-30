@@ -6,8 +6,8 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.hinddev.app87.numa"
-        minSdk 21
+        applicationId "com.hinddev.app87.numaTest"
+        minSdk 24
         targetSdk 32
         versionCode 1
         versionName "1.0"
@@ -45,6 +45,7 @@ dependencies {
 
     implementation fileTree(include: ['*.jar'], dir: 'libs')
 
+
     //Please also include relative aar
 
 
@@ -54,6 +55,10 @@ dependencies {
 //    implementation(name: 'NuwaBLEInterface_2020-11-27_v1.0_62415eb_release', ext: 'aar')
     implementation (files("libs/NuwaSDK-2021-07-08_1058_2.1.0.08_e21fe7.aar"))
     implementation (files("libs/NuwaBLEInterface_2020-11-27_v1.0_62415eb_release.aar"))
+    implementation 'com.journeyapps:zxing-android-embedded:4.1.0'
+
+
+
 
 
 }

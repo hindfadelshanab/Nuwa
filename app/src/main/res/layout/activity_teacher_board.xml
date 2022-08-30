@@ -13,6 +13,8 @@
         android:textSize="12sp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
+        android:enabled="false"
+
         android:padding="16dp"
         android:text="The child was able to show the correct face"
 
@@ -32,6 +34,7 @@
         android:textSize="12sp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
+        android:enabled="false"
         android:padding="16dp"
         android:text="The child was Not able to show the correct face"
         android:textColor="@color/black"
@@ -41,4 +44,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_true"
          />
+    <ImageView
+        android:id="@+id/imageHappyFaceTeacher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/boy"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"
+
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
